@@ -19,7 +19,7 @@ This is an opportunity to join **`ACCENTURE DIGITAL`** as a `Junior Data Scienti
 - 1-2 years of experience doing quantitative analysis
 - Understanding of statistics (eg, hypothesis testing, regressions, etc ...)
 - Organizational, communication, writing and interpersonal skills
-- Knowledge in SQL or other programming languages
+- Knowledge in SQL or other programming languages.
 - Experience in any scripting language (Hadoop, R, SAS Miner, Python, Matlab, SSPS).
 - BA / BS in Computer Science, Math, Physics, Engineering, Statistics or other technical field
 
