@@ -23,21 +23,22 @@ This is an opportunity to join **`ACCENTURE DIGITAL`** as a `Junior Data Scienti
 - Experience in any scripting language (Hadoop, R, SAS Miner, Python, Matlab, SSPS).
 - BA / BS in Computer Science, Math, Physics, Engineering, Statistics or other technical field
 
-## Questions 
-For each of the questions below, answer as if you were in an interview, explaining and justifying your answer with two to three paragraphs as you see fit. For coding answers, explain the relevant choices you made writing the code.
+## Questions
+Instruction : 
+_For each of the questions below, answer as if you were in an interview, explaining and justifying your answer with two to three paragraphs as you see fit. For coding answers, explain the relevant choices you made writing the code._
 
-1. We A/B tested two styles for a sign-up button on our company's product page. 100 visitors viewed page **A**, out of which 20 clicked on the button; whereas, 70 visitors viewed page **B**, and only 15 of them clicked on the button. Can you confidently say that page **A** is a better choice, or page **B**? Why?
+### Question 1.
+We A/B tested two styles for a sign-up button on our company's product page. 100 visitors viewed page **`A`**, out of which 20 clicked on the button; whereas, 70 visitors viewed page **`B`**, and only 15 of them clicked on the button. Can you confidently say that page **`A`** is a better choice, or page **`B`**? Why?
 
-ANSWER : 
+### Solution 1: 
 - for Page **A**, given `100 visitors` , we have `20 clicks`
 - for Page **B**, given `70 visitors`, we have `15 clicks`
 
 Looking at the question alone, I think it will be a **bias conclusion** to say that **`A`** is better choice than **`B`**. 
-
 Given that this has been tested, we cannot come to a conclusion. If we run the test again, we might arrive at a different outcome. 
-
 One thing to do here is to use _probability_.
-**NOTE** : 
+
+#### NOTE: 
 > _I do not know if the pages were tested at the same time or separately. It could that two different pages where made and tested differently_
 
 
@@ -48,4 +49,18 @@ One thing i will experiment here is to combine the probability (`PR` _to denote 
 
 So now, we have a total of `170` and `35` for **pages** and **visits** respectively.
 
-```TO BE CONTINUED later today```
+
+### Question 2. 
+Can you devise a scheme to group Twitter users by looking only at their tweets? No demographic, geographic or other identifying information is available to you, just the messages they’ve posted, in plain text, and a timestamp for each message.
+
+In JSON format, they look like this:
+```json
+{
+ "user_id": 3,
+ "timestamp": "2016-03-22_11-31-20",
+ "tweet": "It's #dinner-time!"
+}
+```
+Assuming you have a stream of these tweets coming in, describe the process of collecting and analyzing them, what transformations/algorithms you would apply, how you would train and test your model, and present the results.
+
+_working in progress_
