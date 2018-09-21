@@ -49,7 +49,11 @@ One thing i will experiment here is to combine the probability (`PR` _to denote 
 
 So now, we have a total of `170` and `35` for **pages** and **visits** respectively.
 
-![Solution 1](../machine-learning/solution_image/solution_1.jpg)
+<img src="../machine-learning/solution_image/solution_1.jpg" />
+
+test 
+![Solution 1](../machine-Learning/solution_image/solution_1.jpg)
+
 
 Given this, I think the positioning of button on Page A has a greater probability of being clicked than the position of button on Page B.
 
