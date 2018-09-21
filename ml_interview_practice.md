@@ -49,7 +49,7 @@ One thing i will experiment here is to combine the probability (`PR` _to denote 
 
 So now, we have a total of `170` and `35` for **pages** and **visits** respectively.
 
-<img src="../machine-learning/solution_image/solution_1.jpg" />
+<img src="../machine-learning/solution_image/solution_1.png" />
 
 test
 ![Solution 1](/Users/bhetey/version_control/machine-learning/solution_image/solution_1.jpg)
