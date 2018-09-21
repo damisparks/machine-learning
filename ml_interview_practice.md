@@ -1,4 +1,4 @@
-# Here are some machine learning interview practice questions. 
+# Machine Learning Interview Question. 
 First, it is important that you find **_`Find a job posting`_**.
 Make you meet at least **70%** of the requirement. Then, answer the question as you would do at the interview. 
 
@@ -49,6 +49,9 @@ One thing i will experiment here is to combine the probability (`PR` _to denote 
 
 So now, we have a total of `170` and `35` for **pages** and **visits** respectively.
 
+![Solution 1](../solution_1.jpg)
+
+Given this, I think the positioning of button on Page A has a greater probability of being clicked than the position of button on Page B. 
 
 ### Question 2. 
 Can you devise a scheme to group Twitter users by looking only at their tweets? No demographic, geographic or other identifying information is available to you, just the messages they’ve posted, in plain text, and a timestamp for each message.
@@ -56,9 +59,9 @@ Can you devise a scheme to group Twitter users by looking only at their tweets? 
 In JSON format, they look like this:
 ```json
 {
- "user_id": 3,
- "timestamp": "2016-03-22_11-31-20",
- "tweet": "It's #dinner-time!"
+    "user_id": 3,
+    "timestamp": "2016-03-22_11-31-20",
+    "tweet": "It's #dinner-time!"
 }
 ```
 Assuming you have a stream of these tweets coming in, describe the process of collecting and analyzing them, what transformations/algorithms you would apply, how you would train and test your model, and present the results.
