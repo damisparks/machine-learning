@@ -65,6 +65,35 @@ In JSON format, they look like this:
     "tweet": "It's #dinner-time!"
 }
 ```
-Assuming you have a stream of these tweets coming in, describe the process of collecting and analyzing them, what transformations/algorithms you would apply, how you would train and test your model, and present the results.
+Assuming you have a stream of these tweets coming in, describe the process of collecting and analysing them, what transformations/algorithms you would apply, how you would train and test your model, and present the results.
+
+### Solution 2.
+Based on the assumption that i have stream of tweets coming in, there is no data shortage.
+
+#### Collection of data
+It is important to know how to collect the data you want. In this case, we need data collection on Tweeter. To collect data on Twitter, my suggestion is to create an account and then go to [Twitter API](apps.twitter.com) to create an app that allows you to collect Twitter data. Just make sure you don't ask too much, because there is a limit on how many times you can request Twitter data.
+
++ If you want to do a one-time collection of tweets, you should use the **REST API**.
++ If you want to do a continuous collection of tweets for a specific time period, you should use the **streaming API**.
++ It is required that you have a private key and token.
+For more information about getting information on Twitter, please checkout this [Twitter Developer Search Tweets](https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets.html)
+
+**NOTE** :
+> _The assumption is that we are not given the demographical information._
+
+
+#### Analysing the data.
+We need to group the data we have. Since we have the geographical information and other identifying information we can do some clustering. Below are ways i will group the data :
+- **Location** : Location is one important way of grouping the data. One thing i will take into consideration is the _Latitude and Longitude_. Normally, when we tweet, i believe there is a timestamp and location are well. Given if you disabled the phone GPS or location services, Twitter will still classify tweets using satellite services or use the phone/device IP-address. The only issue here is the accuracy may be nearest in metres.
+- **Time** : My intuition here is that tweets could grouped based on time they were tweets, retweeted and more. For instance, if i am interested in knowing what time of the day, do users tweet the most ? I could use the timestamp. I could also use it in combination with location if i want to know what time of the day, week, month do users tweet the most in a region.
+- **Usage** : Usage is how often Twitter is used. e.g _How many  tweets, retweets, mentioned, many more._ I also think that what users interact with could be used here. e.g _now all users on Twitter tweets every day, but most do interact with the application, website, or view others tweets as well._ It also contains how active the user is.
+
+#### Algorithms
+After getting the features, it is important to state the kind of algorithm to be used.
+In this scenario, i will use a **clustering algorithm** such as **`k-Means`** or **`gaussian mixture models`**. We can optimise the algorithm in order to have the best separation between specified groups.
+
+#### Training, Testing and Communicating Results.
+One of the golden rule in machine learning is not to train your model with a testing set.
+It is very important to divide your dataset into sets. That is you will have your `training dataset`, `testing dataset`, and `validation set`. Normally, i use divide the dataset using a percentage of `70,20,10`. Presenting the result would be done using different data visualization libraries like [seaborn](https://seaborn.pydata.org/), [Matplotlip](https://matplotlib.org/) etc.
 
 _working in progress_
