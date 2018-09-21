@@ -51,8 +51,8 @@ So now, we have a total of `170` and `35` for **pages** and **visits** respectiv
 
 <img src="../machine-learning/solution_image/solution_1.jpg" />
 
-test 
-![Solution 1](../machine-Learning/solution_image/solution_1.jpg)
+test
+![Solution 1](/Users/bhetey/version_control/machine-learning/solution_image/solution_1.jpg)
 
 
 Given this, I think the positioning of button on Page A has a greater probability of being clicked than the position of button on Page B.
