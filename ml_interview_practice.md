@@ -79,7 +79,7 @@ It is important to know how to collect the data you want. In this case, we need 
 For more information about getting information on Twitter, please checkout this [Twitter Developer Search Tweets](https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets.html)
 
 **NOTE** :
-> _The assumption is that we are not given the demographical information._
+> _The assumption is that we are not given the demographic information._
 
 
 #### Analysing the data.
@@ -94,6 +94,75 @@ In this scenario, i will use a **clustering algorithm** such as **`k-Means`** or
 
 #### Training, Testing and Communicating Results.
 One of the golden rule in machine learning is not to train your model with a testing set.
-It is very important to divide your dataset into sets. That is you will have your `training dataset`, `testing dataset`, and `validation set`. Normally, i use divide the dataset using a percentage of `70,20,10`. Presenting the result would be done using different data visualization libraries like [seaborn](https://seaborn.pydata.org/), [Matplotlip](https://matplotlib.org/) etc.
+It is very important to divide your dataset into sets. That is you will have your `training dataset`, `testing dataset`, and `validation set`. Normally, i use divide the dataset using a percentage of `70,20,10`. Presenting the result would be done using different data visualisation libraries like [seaborn](https://seaborn.pydata.org/), [Matplotlip](https://matplotlib.org/) etc.
 
-_working in progress_
+
+### Question 3.
+In a classification setting, given a dataset of labeled examples and a machine learning model you're trying to fit, describe a strategy to detect and prevent overfitting.
+
+### Solution 3
+First, it is important to know what `Overfitting` is. Overfitting is a kind of model that does not generalise well. Instead it is memorising the dataset. According to [Wikipedia](https://en.wikipedia.org/wiki/Overfitting), overfitting in statistics is
+> _the production of an analysis that corresponds too closely or exactly to a particular set of data, and may therefore fail to fit additional data or predict future observations reliably_.
+
+However, In machine learning Overfitting is a model that does really well on the training set. It learns the data so well including the noise to extent that it negativity impact the performance of the model on new data.
+
+**How to detect overfitting**:
+Your model is likely to be overfitting when it does really well on the training set and performs really bad on the testing set. That is the accuracy of the model of the training set is greater than the testing set accuracy. This is a signal of overfitting.
+
+**How to prevent overfitting :**
+There are different ways to prevent overfitting. There are two important techniques that you can use when evaluating machine learning algorithms to limit overfitting:
++ Use a resampling technique to estimate model accuracy.
++ Hold back a validation dataset.
++ regularisation
+
+### Question 4
+Your team is designing the next generation user experience for your flagship 3D modeling tool. Specifically, you have been tasked with implementing a smart context menu that learns from a modeler’s usage of menu options and shows the ones that would be most beneficial.
+
+_E.g. I often use **Edit** > **Surface** > **Smooth Surface**, and wish I could just right click and there would be a Smooth Surface option just like Cut, Copy and Paste. Note that not all commands make sense in all contexts, for instance I need to have a surface selected to smooth it. How would you go about designing a learning system/agent to enable this behaviour?_
+
+### Solution 4.
+One thing that would be beneficial here, is to use `Unsupervised Learning`. It will enable us to understand to the patterns. One thing i will do here, will be to cluster some certain similar commands to see how the users combine them together. This helps to see what commands are used with another. With this insight, we can go ahead to create a menu option.
+
+### Question 5.
+Give an example of a situation where regularisation is necessary for learning a good model. How about one where regularisation doesn't make sense?
+
+### Solution 5.
+Below i talk about when regularisation is important or not, I think it is important to describe what regularisation is. So **What is regularisation ?**
+
+Regularisation is used to prevent overfitting.
+In [Deep Learning](https://www.deeplearningbook.org/contents/regularization.html),
+
+>  _regularisation is any modiﬁcation we make to a learning algorithm that is intended to reduce its generalisation error but not its training error._
+>
+> -- <cite>Deep Learning by Ian Goodfellow</cite>
+
+According to <cite>Him</cite>,
+> _There are many regularisation strategies. Some put extra constraints on a machine learning model, such as adding restrictions on the parameter values. Some add extra terms in the objective function that can be thought of as corresponding to a soft constraint on the parameter values. If chosen carefully, these extra constraints and penalties can lead to improved performance on the test set._
+
+**When is regularisation important ?**
+Regularisation is important when you think you model is overfitting. The goal of learning problem is to find a function that fits or predicts the outcome (label) that minimises the expected error over all possible inputs and labels.
+
+**It does not make sense when ?**
+Regularisation does not make sense you have previously normalised your previously normalised your range to be  0 to 1. In this case, regularisation would be less useful.
+
+### Question 6.
+Your neighbourhood grocery store would like to give targeted coupons to its customers, ones that are likely to be useful to them. Given that you can access the purchase history of each customer and catalog of store items, how would you design a system that suggests which coupons they should be given? Can you measure how well the system is performing?
+
+### Solution 6.
+My suggestion will be :
+- to build a `Recommender System` which is an Unsupervised Learning algorithm.
+- or cluster customers in segments.
+
+`Recommender System` is one of the most popular applications of data science today. They are used to predict the `rating`  or `preference` that a user would give to an item. This system will look at customers histories, find similarities, and then make suggestions based on what they buy alike.
+
+However, `Clustering` using `K-means` or `Gaussian Mixture Model` will look the customers in group rather than individually. The algorithm will cluster customers in groups. A preference is created based on the groupings. Now, we can create an offer based on groups and preference with the insight we can get from the clustering algorithms. In order to continue improving the model , a reinforcement learning agent can be developed. The agent will learn through `rewards` and `punishment`.
+
+### Question 7.
+If you were hired for your machine learning position starting today, how do you see your role evolving over the next year? What are your long-term career goals, and how does this position help you achieve them?
+
+### Solution 7.
+If i am hired, it is important that i will be joyous.
+
+First, i want to learn from the experience of people who are far ahead of me in this field. The job offers that. The task that is given to me will be done by me of course, but then reviewed by project manager or team lead. The feedbacks are important to me because it will help me develop.  It is important to mention that i am interested in artificial intelligent. I want to use machine learning and deep learning algorithm to solve business complex challenges.  
+
+This contributes to my long term goal in terms of development. Not only does the learning from expect helps me, but research best practice and innovation deepen my understanding and evolves my thinking. One ultimate goal is to build a smart application that solves a problem. I will make it happen. I also want to contribute to the growing community of developers and researchers.
