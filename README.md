@@ -13,7 +13,7 @@ The repo is divided into :
     * dog-project 
     * capstone.
 * solution-image
-* ...
+* ... (this means others. )
 
 The following modules: 
 * boston_housing
